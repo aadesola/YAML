@@ -22,6 +22,20 @@ steps:
     verbose: false
     customCommand: build
 
+- task: Npm@1
+  displayName: 'npm custom script'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run-script build'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: dist'
+  inputs:
+    PathtoPublish: dist
+    ArtifactName: dist
+
+
 - task: AzureRmWebAppDeployment@4
   displayName: 'Azure App Service Deploy '
   inputs:

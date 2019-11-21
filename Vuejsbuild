@@ -34,11 +34,3 @@ steps:
   inputs:
     PathtoPublish: dist
     ArtifactName: dist
-
-
-- task: AzureRmWebAppDeployment@4
-  displayName: 'Azure App Service Deploy '
-  inputs:
-    azureSubscription: 
-    WebAppName: 
-    packageForLinux: dist

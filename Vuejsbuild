@@ -1,8 +1,4 @@
 # This script creates a CICD pipeline to azure appservice for Vue.js projects
-# Ensure you have the following 
-# 1 azureSubscription: service connector from azure devops to Azure
-# 2 WebAppName: Your appservice name on Azure portal
-# 3 packageForLinux: Folder to be released to appservice and its mostly the contents of /dist folder
 # Curated by Adesola Ajayi :)
 
 pool:

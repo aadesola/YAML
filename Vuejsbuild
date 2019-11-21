@@ -1,4 +1,4 @@
-# This script creates a CICD pipeline to azure appservice for Vue.js projects
+# This script creates a build pipeline for Vue.js projects
 # Curated by Adesola Ajayi :)
 
 pool:
